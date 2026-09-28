@@ -22,6 +22,5 @@ export const playlists = [
 export const links = {
   spotify: "https://open.spotify.com/",
   ytmusic: "https://music.youtube.com/playlist?list=PLKVAvNORByw8",
-  whatsapp: "#",
   email: "workprojectdeploy@gmail.com"
 };
