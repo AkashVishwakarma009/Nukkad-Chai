@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>नुक्कड़ FM — chai tapri radio</title>
+<meta name="description" content="Chai tapri pe 90s ke Hindi gaane, din ho ya raat. Live listeners ke saath.">
+<meta name="theme-color" content="#2a170d">
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Hind:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-in">
+    <div class="status"><span class="dot"></span><span id="live">on air</span></div>
+    <h1>नुक्कड़ FM</h1>
+    <p class="sub">Chai tapri pe 90s ke Hindi gaane, din ho ya raat.</p>
+    <div class="btns">
+      <button class="btn solid" id="hp">Radio chalao</button>
+      <a class="btn" id="spotify" href="#" target="_blank" rel="noopener">Spotify</a>
+      <a class="btn" id="ytm" href="#" target="_blank" rel="noopener">YT Music</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h2>Kya chal raha hai</h2>
+  <p>Ek kulhad chai, ek purana cassette aur nukkad ki bench. Ye radio kabhi band nahi hota: 90s ke filmi gaane, ek ke baad ek, bina ads ke.</p>
+
+  <h2>Rotations</h2>
+  <div class="rot" id="rot"></div>
+
+  <div class="crew">
+    <b>Naye gaane sabse pehle chahiye?</b><br>
+    <a id="wa" href="#" target="_blank" rel="noopener">WhatsApp channel join karo</a>
+  </div>
+
+  <h2>Aaj ki playlist</h2>
+  <table id="songs"></table>
+
+  <footer>
+    Audio YouTube ke embedded player se chalta hai. Is site pe koi gaana host nahi hai; sab rights labels, composers aur artists ke paas hain.<br>
+    Contact: <a id="mail" href="#"></a> · © 2026 Nukkad FM
+  </footer>
+</main>
+
+<div class="bar">
+  <button id="pp" aria-label="Play">▶</button>
+  <div class="t"><b id="tt">Nukkad FM</b><span id="ts">Tune in karne ke liye play dabao</span></div>
+</div>
+<iframe id="yt" title="YouTube player" allow="autoplay; encrypted-media"></iframe>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

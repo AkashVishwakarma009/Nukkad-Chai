@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "listeners": {
+      ".read": true,
+      "$id": {
+        ".write": true,
+        ".validate": "newData.hasChild('t') && newData.child('t').isNumber()"
+      }
+    }
+  }
+}
