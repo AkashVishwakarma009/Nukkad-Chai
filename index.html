@@ -44,11 +44,18 @@
   </footer>
 </main>
 
-<div class="bar">
-  <button id="pp" aria-label="Play">▶</button>
-  <div class="t"><b id="tt">Nukkad FM</b><span id="ts">Tune in karne ke liye play dabao</span></div>
+<div class="bar" role="region" aria-label="Radio player">
+  <img id="art" class="art" alt="" src="assets/chai-tapri.jpg">
+  <div class="meta"><b id="tt">Nukkad FM</b><span id="ts">Nukkad FM radio</span></div>
+  <div class="prog"><input type="range" id="seek" min="0" max="100" value="0" step="0.1" aria-label="Gaane ki position"><span id="time">0:00 / 0:00</span></div>
+  <div class="ctls">
+    <button class="ctl" id="prev" aria-label="Pichla gaana">⏮</button>
+    <button id="pp" aria-label="Play">▶</button>
+    <button class="ctl" id="next" aria-label="Agla gaana">⏭</button>
+  </div>
+  <div class="vol"><span aria-hidden="true">🔉</span><input type="range" id="vol" min="0" max="100" value="100" aria-label="Volume"></div>
 </div>
-<iframe id="yt" title="YouTube player" allow="autoplay; encrypted-media"></iframe>
+<div id="yt"></div>
 
 <script type="module" src="app.js"></script>
 </body>

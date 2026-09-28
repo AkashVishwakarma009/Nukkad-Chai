@@ -13,10 +13,10 @@ export const firebaseConfig = {
 
 // YouTube playlist ID (URL mein list= ke baad wala hissa)
 export const playlists = [
-  { name: "Highway Raat",    desc: "Truck ki cabin, lambi sadak", id: "" },
-  { name: "Chai Classics",   desc: "Subah ki pehli chuski",       id: "" },
-  { name: "90s Dard",        desc: "Toote dil ke gaane",          id: "" },
-  { name: "Shaadi & Sunday", desc: "Dholak aur dance floor",      id: "" }
+  { name: "Highway Raat",    desc: "Truck ki cabin, lambi sadak", id: "PLKVAvNORByw8" },
+  { name: "Chai Classics",   desc: "Subah ki pehli chuski",       id: "PLKVAvNORByw8" },
+  { name: "90s Dard",        desc: "Toote dil ke gaane",          id: "PLKVAvNORByw8" },
+  { name: "Shaadi & Sunday", desc: "Dholak aur dance floor",      id: "PLKVAvNORByw8" }
 ];
 
 export const songs = [
@@ -29,7 +29,7 @@ export const songs = [
 
 export const links = {
   spotify: "https://open.spotify.com/",
-  ytmusic: "https://music.youtube.com/",
+  ytmusic: "https://music.youtube.com/playlist?list=PLKVAvNORByw8",
   whatsapp: "#",
   email: "hello@example.com"
 };
