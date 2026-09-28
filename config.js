@@ -16,7 +16,8 @@ export const playlists = [
   { name: "Highway Raat",    desc: "Truck ki cabin, lambi sadak", id: "PLKVAvNORByw8" },
   { name: "Chai Classics",   desc: "Subah ki pehli chuski",       id: "PLKVAvNORByw8" },
   { name: "90s Dard",        desc: "Toote dil ke gaane",          id: "PLR8E_r0sUO0Y" },
-  { name: "Shaadi & Sunday", desc: "Dholak aur dance floor",      id: "PLKVAvNORByw8" }
+  { name: "Shaadi & Sunday", desc: "Dholak aur dance floor",      id: "PLKVAvNORByw8" },
+  { name: "Gym Songs",       desc: "Josh aur workout ka mood",    id: "PLLq_VoNZxuEM" }
 ];
 
 export const links = {
