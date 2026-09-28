@@ -15,21 +15,13 @@ export const firebaseConfig = {
 export const playlists = [
   { name: "Highway Raat",    desc: "Truck ki cabin, lambi sadak", id: "PLKVAvNORByw8" },
   { name: "Chai Classics",   desc: "Subah ki pehli chuski",       id: "PLKVAvNORByw8" },
-  { name: "90s Dard",        desc: "Toote dil ke gaane",          id: "PLKVAvNORByw8" },
+  { name: "90s Dard",        desc: "Toote dil ke gaane",          id: "PLR8E_r0sUO0Y" },
   { name: "Shaadi & Sunday", desc: "Dholak aur dance floor",      id: "PLKVAvNORByw8" }
-];
-
-export const songs = [
-  ["Tujhe dekha to ye jaana sanam", "DDLJ, 1995"],
-  ["Pehla nasha", "Jo Jeeta Wohi Sikandar, 1992"],
-  ["Kuch kuch hota hai", "Kuch Kuch Hota Hai, 1998"],
-  ["Ek ladki ko dekha to", "1942: A Love Story, 1994"],
-  ["Chura ke dil mera", "Main Khiladi Tu Anari, 1994"]
 ];
 
 export const links = {
   spotify: "https://open.spotify.com/",
   ytmusic: "https://music.youtube.com/playlist?list=PLKVAvNORByw8",
   whatsapp: "#",
-  email: "hello@example.com"
+  email: "workprojectdeploy@gmail.com"
 };

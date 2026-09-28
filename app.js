@@ -1,4 +1,4 @@
-import { firebaseConfig, playlists, songs, links } from "./config.js";
+import { firebaseConfig, playlists, links } from "./config.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getDatabase, ref, push, set, onValue, onDisconnect }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
@@ -12,7 +12,6 @@ $("ytm").href = links.ytmusic;
 $("wa").href = links.whatsapp;
 $("mail").href = "mailto:" + links.email;
 $("mail").textContent = links.email;
-$("songs").innerHTML = songs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join("");
 
 const rot = $("rot");
 playlists.forEach((p, i) => {
