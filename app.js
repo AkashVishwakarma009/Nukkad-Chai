@@ -14,14 +14,21 @@ $("mail").href = "mailto:" + links.email;
 $("mail").textContent = links.email;
 
 const rot = $("rot");
+const defaultBg = "assets/chai-tapri.jpg";
+function setHero(i) {
+  const bg = playlists[i].bg || defaultBg;
+  $("hero").style.backgroundImage =
+    'linear-gradient(to top,rgba(30,18,11,.95) 0%,rgba(30,18,11,.55) 38%,rgba(30,18,11,0) 70%), url("' + bg + '")';
+}
 playlists.forEach((p, i) => {
   const b = document.createElement("button");
   b.innerHTML = `<b>${p.name}</b><span>${p.desc}</span>`;
-  b.onclick = () => { cur = i; mark(); };
+  b.onclick = () => { cur = i; mark(); setHero(i); startPlaylist(); };
   rot.appendChild(b);
 });
 function mark() { [...rot.children].forEach((b, i) => b.classList.toggle("on", i === cur)); }
 mark();
+setHero(cur);
 
 /* ---------- player (YouTube IFrame API) ---------- */
 let player = null, dragging = false, lastVid = "", msg = "";
@@ -89,8 +96,6 @@ function toggle() {
   if (playing) player.pauseVideo(); else player.playVideo();
 }
 
-mark();
-[...rot.children].forEach((b, i) => { b.onclick = () => { cur = i; mark(); startPlaylist(); }; });
 $("pp").onclick = toggle;
 $("hp").onclick = toggle;
 $("next").onclick = () => player ? player.nextVideo() : startPlaylist();

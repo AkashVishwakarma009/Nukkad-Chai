@@ -2,9 +2,9 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:Hind,system-ui,sans-serif;line-height:1.55}
 a{color:inherit}
-.hero{min-height:92vh;display:flex;align-items:flex-end;background:
+.hero{min-height:92vh;display:flex;align-items:flex-end;background-size:cover;background-position:center;background-repeat:no-repeat;background-image:
  linear-gradient(to top,rgba(30,18,11,.95) 0%,rgba(30,18,11,.55) 38%,rgba(30,18,11,0) 70%),
- url("assets/chai-tapri.jpg") center/cover no-repeat}
+ url("assets/chai-tapri.jpg");transition:background-image .4s ease}
 .hero-in{max-width:760px;margin:0 auto;width:100%;padding:24px 20px 40px;text-shadow:0 2px 14px rgba(0,0,0,.8)}
 .status{display:inline-flex;gap:8px;align-items:center;font-size:15px}
 .dot{width:9px;height:9px;border-radius:50%;background:#5be07a;box-shadow:0 0 0 4px #5be07a44}
