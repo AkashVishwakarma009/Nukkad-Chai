@@ -10,7 +10,7 @@ export const firebaseConfig = {
   messagingSenderId: "619320839141",
   appId: "1:619320839141:web:99fb7a4a407f25ab74fd0c"
 };
-export const recaptchaSiteKey = "6LcbLNUtAAAAALb1dmU21AUCMbKAkrhxZv1X1bJZ";
+export const recaptchaSiteKey = "YOUR_RECAPTCHA_SITE_KEY";
 // YouTube playlist ID (URL mein list= ke baad wala hissa)
 export const playlists = [
   { name: "Highway Raat",    desc: "Truck ki cabin, lambi sadak", id: "PLKVAvNORByw8" },
