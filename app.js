@@ -1,5 +1,8 @@
-import { firebaseConfig, playlists, links } from "./config.js";
+import { firebaseConfig, links, recaptchaSiteKey } from "./config.js";
+import { playlists } from "./config.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { initializeAppCheck, ReCaptchaV3Provider }
+  from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app-check.js";
 import { getDatabase, ref, push, set, onValue, onDisconnect }
   from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
@@ -114,7 +117,11 @@ ui();
 /* ---------- live listener count (Firebase Realtime Database) ---------- */
 try {
   if (firebaseConfig.apiKey.startsWith("YOUR_")) throw new Error("no config");
-  const db = getDatabase(initializeApp(firebaseConfig));
+  const fbApp = initializeApp(firebaseConfig);
+  if (recaptchaSiteKey && !recaptchaSiteKey.startsWith("YOUR_")) {
+    initializeAppCheck(fbApp, { provider: new ReCaptchaV3Provider(recaptchaSiteKey), isTokenAutoRefreshEnabled: true });
+  }
+  const db = getDatabase(fbApp);
   const me = push(ref(db, "listeners"));               // har visitor ka ek entry
   onValue(ref(db, ".info/connected"), (snap) => {
     if (snap.val() === true) {
